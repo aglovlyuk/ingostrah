@@ -1,0 +1,13 @@
+# Created by .gitignore support plugin (hsz.mobi)
+$ cat .gitignore
+styles.css.map
+prepros.cfg
+*.xls
+*.xml
+.idea/
+pp/
+input/
+
+node_modules
+sourceimages
+.sublime-gulp.cache

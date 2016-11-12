@@ -1,0 +1,15 @@
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden; }
+
+#wrapper {
+  max-width: 1000px; }
+/*# sourceMappingURL=main.css.map */
