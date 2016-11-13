@@ -3,35 +3,190 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Project Title</title>
+	<title>Ингосстрах</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="js/jquery.main.js" defer></script>
 </head>
 <body>
 	<header class="header">
 		<div class="container">
-
+			<div class="row">
+				<div class="col-sm-5 col-sm-offset-1">
+					<div class="logo">
+						<a href="#"><img src="images/logo.png" alt="Ингосстрах" class="img-responsive"></a>
+					</div>
+					<div class="title">
+						<h1>Подарки для Вас в наш День Рождения</h1>
+					</div>
+					<span class="subtitle">Ингосстрах всегда поддержит</span>
+					<div id="email">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-reg">
+							получить подарок
+						</button>
+					</div>
+				</div>
+				<div class="col-sm-5 hidden-xs">
+					<div class="img-holder text-right">
+						<img src="images/photo-img.png" class="img-responsive" alt="img-description">
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 
 	<section class="promo-block">
 		<div class="container">
-
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<article class="post">
+						<p>Вот уже 69 лет наша компания защищает тысячи семей по всей России, беря на себя финансовые риски клиентов.</p>
+						<p>Все это время мы помогаем делать Вашу жизнь комфортнее и ярче, с каждым годом мы становимся лучше для Вас. И 69-й год не исключение.</p>
+						<div class="collapse" id="openclose" aria-expanded="false">
+							<ul class="list">
+								<li><i class="icon-support"></i>Теперь в <a href="#">личном кабинете</a> для Вас открыты новые возможности и сервисы. Приглашаем зарегистрироваться, если Вы еще этого не сделали!</li>
+								<li><i class="icon-car"></i><a href="#">Калькулятор каско</a> стал настолько удобным, что рассчитать стоимость можно за одну минуту, а клиенты из Москвы и области могут оплатить полис онлайн.</li>
+								<li><i class="icon-home"></i>Популярные <a href="#">страховые полисы</a> стали открыты к оформлению на сайте, например, хит сезона — страхование отмены поездки и страхование дачи — можно оформить за пару минут.</li>
+							</ul>
+							<p>В свой день рождения мы приготовили для Вас подарки! Заходите и выбирайте то, что понравится именно Вам!</p>
+							<p>Спасибо, что вы с нами!</p>
+						</div>
+						<div class="post__btn">
+							<button class="btn btn-default collapsed" type="button" data-toggle="collapse" data-target="#openclose" aria-expanded="false" aria-controls="openclose">
+								<span class="closed">Подробнее</span>
+								<span class="opened">Скрыть</span>
+							</button>
+						</div>
+					</article>
+				</div>
+			</div>
 		</div>
 	</section>
-	<section class="cta-block">
+
+	<section class="cta">
 		<div class="container">
-
+			<div class="cta__heading text-center">
+				<h2>получить ваш подарок!</h2>
+				<div class="cta__heading-decor">
+					<i class="icon-gift"></i>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-md-push-7">
+					<div class="cta__image">
+						<img class="img-responsive" src="images/img01.jpg" alt=""/>
+					</div>
+				</div>
+				<div class="col-md-6 col-md-offset-1 col-md-pull-4 cta__text">
+					<strong class="cta__title">5 аудиокниг на Литрес на выбор</strong>
+					<p>Любимые произведения в дороге, на отдыхе и за рулем!<br/>
+						Выберите 5 понравившихся книг на Литрес и скачайте их бесплатно! <br/>
+						Специально для вас лучшие книги: известные писатели, бестселлеры, лауреаты премий и экранизированные романы доступны для скачивания в честь Дня Рождения Ингосстрах!</p>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-reg">
+						получить подарок
+					</button>
+				</div>
+			</div>
 		</div>
 	</section>
+
 	<footer class="footer">
 		<div class="container">
-
+			<div class="row footer__top">
+				<div class="col-sm-6 col-md-4 footer-block">
+					<div class="short-links">
+						<h3 class="h6">Заходите на наш сайт</h3>
+						<a href=""><i class="icon-web"></i><span>www.ingos.ru</span></a>
+					</div>
+					<div class="short-links">
+						<h3 class="h6">Мы в соц сетях</h3>
+						<ul class="social-links">
+							<li><a href="" title="facebook"><i class="icon-facebook"></i></a></li>
+							<li><a href="" title="vk"><i class="icon-vk"></i></a></li>
+							<li><a href="" title="twitter"><i class="icon-twitter"></i></a></li>
+							<li><a href="" title="ok"><i class="icon-ok"></i></a></li>
+							<li><a href="" title="youtube"><i class="icon-youtube"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 footer-block">
+					<div class="footer-links">
+						<h3 class="h6">Виды страхования</h3>
+						<ul class="footer-links__list">
+							<li><a href="">КАСКО</a></li>
+							<li><a href="">ДМС</a></li>
+							<li><a href="">Страхование туристов</a></li>
+							<li><a href="">Страхование имущества</a></li>
+							<li><a href="">Страхование жизни</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 footer-block">
+					<div class="app">
+						<h3 class="h6">Мобильные приложения</h3>
+						<div class="app__row">
+							<span class="app__title">IngoMobile</span>
+							<ul class="app__list">
+								<li><a href=""><i class="icon-apple"></i></a></li>
+								<li><a href=""><i class="icon-android"></i></a></li>
+								<li><a href=""><i class="icon-windows"></i></a></li>
+							</ul>
+						</div>
+						<div class="app__row">
+							<span class="app__title">IngoTravel</span>
+							<ul class="app__list">
+								<li><a href=""><i class="icon-apple"></i></a></li>
+								<li><a href=""><i class="icon-android"></i></a></li>
+							</ul>
+						</div>
+						<div class="app__row">
+							<span class="app__title">IngoReport</span>
+							<ul class="app__list">
+								<li><a href=""><i class="icon-apple"></i></a></li>
+								<li><a href=""><i class="icon-android"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-info">
+				<p>© 2016 СПАО «Ингосстрах». По вопросам сопровождения сайта обращайтесь www@ingos.ru <br/>
+					Лицензии ЦБ РФ на осуществление страхования СИ №0928, СЛ №0928, ОС №0928-02, ОС №0928-03, ОС №0928-04, ОС №0928-05 и на осуществление перестрахования ПС № 0928, все лицензии выданы 23.09.2015 без ограничения срока действия.</p>
+				<p>{disclamer}</p>
+			</div>
 		</div>
 	</footer>
+
+	<div class="modal fade" id="modal-reg" tabindex="-1" role="dialog" aria-labelledby="modal-reg">
+		<div class="modal-dialog modal-reg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="h6 modal-title">Для получения подарка, пожалуйста, зарегистрируйтесь</h4>
+				</div>
+				<div class="modal-body">
+					<form action="#">
+						<div class="form-group">
+							<label for="name" class="label-block">Введите свое имя*</label>
+							<input type="text" class="form-control" placeholder="Иван Иванов" id="name"/>
+						</div>
+						<div class="form-group">
+							<label for="reg-email" class="label-block">Укажите свой E-mail*</label>
+							<input type="email" class="form-control" placeholder="podarok@mail.ru" id="reg-email"/>
+						</div>
+						<div class="form-group term-checkbox">
+							<input type="checkbox" id="term"/>
+							<label for="term">согласен с <a href="">условиями</a> получения подарка</label>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-block btn-primary">Получить подарок</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

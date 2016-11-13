@@ -1,0 +1,33 @@
+/* #header */
+
+.header {
+	padding: 0 0 30px;
+	background: #fff url(../images/bg-intro.png) repeat-x;
+	.logo {
+		margin: 43px 0 30px;
+		a {
+			display: inline-block;
+		}
+	}
+	.title h1 {
+		font-size: $font-size-base * 1.875;
+		color: $brand-success;
+	}
+	.subtitle {
+		color: $brand-success;
+		font-size: 20px;
+		margin: 0 0 35px;
+		display: inline-block;
+	}
+	.img-holder {
+		@include media('>=widescreen') {
+			margin-right: -40px;
+		}
+	}
+}
+#email {
+	display: none;
+	&:target {
+		display: block;
+	}
+}

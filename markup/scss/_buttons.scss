@@ -1,0 +1,38 @@
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 12px 40px;
+	border-radius: 4px;
+	text-decoration: none;
+	border: none;
+	@include anim;
+	&:hover {
+		box-shadow: 0 5px 10px rgba($brand-primary, .75);
+		color: #fff;
+		background: $brand-primary;
+		text-decoration: none;
+	}
+}
+.btn-primary {
+	background: #f38230;
+	color: #fff;
+}
+.btn-default {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: 400;
+	color: #f38230;
+	border: 1px solid $brand-primary;
+	&:hover {
+		box-shadow: none;
+		border-color: $brand-primary;
+	}
+	&:focus {
+		color: #fff;
+		box-shadow: none;
+		background: lighten($brand-primary, 7%);
+		border-color: lighten($brand-primary, 7%);
+	}
+}

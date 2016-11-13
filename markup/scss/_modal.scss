@@ -1,0 +1,79 @@
+/* #style modals */
+
+.modal-reg {
+	max-width: 456px;
+	label {
+		font-weight: 400;
+	}
+	.modal-content {
+		border: 0;
+		font-size: 14px;
+		background: none;
+	}
+	.modal-header {
+		border: 0;
+		padding: 36px 10px 21px;
+		color: #fff;
+		background: $brand-success;
+		border-radius: 6px 6px 0 0;
+		text-align: center;
+		.close {
+			color: #fff;
+			opacity: 1;
+			margin: -28px 4px 0 0;
+			font-weight: 200;
+		}
+	}
+	.modal-footer,
+	.modal-body {
+		@extend %clearfix;
+		background: #fff;
+		padding: 20px;
+		@include media('>=tablet') {
+			padding: 30px 83px 0;
+		}
+	}
+	.modal-footer {
+		border: 0;
+		padding-bottom: 26px;
+		border-radius: 0 0 6px 6px;
+		&:after {
+			content: '';
+			display: block;
+			background: url(../images/bg-modal.png) no-repeat;
+			width: 37px;
+			height: 6px;
+			margin: 34px auto 0;
+		}
+	}
+	.label-block {
+		display: block;
+		padding-left: 12px;
+		color: $brand-success;
+		margin-bottom: 8px;
+	}
+	.term-checkbox {
+		color: #a8a8a8;
+		display: flex;
+		align-items: center;
+		margin-right: -20px;
+		padding-top: 20px;
+		a{
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		label {
+			margin: 0;
+		}
+		input[type="checkbox"] {
+			border: 1px solid $brand-success;
+			border-radius: 3px;
+			width: 15px;
+			height: 15px;
+			margin: 0 4px 0 0;
+			padding: 0;
+		}
+	}
+}
