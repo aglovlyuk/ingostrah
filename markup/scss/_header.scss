@@ -2,6 +2,9 @@
 
 .header {
 	padding: 0 0 30px;
+	@include media('<tablet') {
+		text-align: center;
+	}
 	.logo {
 		margin: 43px 0 30px;
 		a {
@@ -19,8 +22,18 @@
 		display: inline-block;
 	}
 	.img-holder {
-		@include media('>=widescreen') {
+		@include media('>=tablet') {
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+		@include media('>=desktop') {
+			margin-left: 0;
 			margin-right: -40px;
+		}
+		img {
+			@include media('<tablet') {
+				margin: 0 auto;
+			}
 		}
 	}
 }

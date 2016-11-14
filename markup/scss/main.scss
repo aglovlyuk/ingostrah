@@ -161,8 +161,11 @@ body {
 }
 .cta__image {
 	box-shadow: 0 6px 21px rgba(#000, .1);
-	display: inline-flex;
-	margin-bottom: 35px;
+	display: table;
+	margin: 0 auto 35px;
+	@include media('>=tablet') {
+		display: inline-flex;
+	}
 	@include media('>=desktop') {
 		margin-bottom: 0;
 	}

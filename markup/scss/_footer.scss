@@ -10,6 +10,18 @@
 }
 .footer__top {
 	margin-bottom: 19px;
+	@include media('<phone') {
+		justify-content: flex-start;
+	}
+	@include media('<tablet') {
+		justify-content: space-between;
+		display: flex;
+		flex-wrap: wrap;
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
 }
 .short-links {
 	margin-bottom: 38px;
