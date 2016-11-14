@@ -9,19 +9,13 @@
 	h3{ margin: 0 0 10px; }
 }
 .footer__top {
-	margin-bottom: 19px;
-	@include media('<phone') {
-		justify-content: flex-start;
-	}
-	@include media('<tablet') {
-		justify-content: space-between;
-		display: flex;
-		flex-wrap: wrap;
-		&:before,
-		&:after {
-			display: none;
-		}
-	}
+	margin: 0 0 19px -25px;
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-block {
+	margin-left: 25px;
 }
 .short-links {
 	margin-bottom: 38px;
@@ -116,6 +110,9 @@
 	li {
 		margin-right: 20px;
 		font-size: 21px;
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 	a {
 		@include anim;

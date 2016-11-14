@@ -1,7 +1,6 @@
 /* #header */
 
 .header {
-	padding: 0 0 30px;
 	@include media('<tablet') {
 		text-align: center;
 	}
