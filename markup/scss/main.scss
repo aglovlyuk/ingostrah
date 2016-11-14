@@ -33,16 +33,20 @@ $media-expressions: (
 @import "footer";
 @import "modal";
 
+body {
+	background: #fff url(../images/bg-intro.png) repeat-x 50% 0;
+}
+
 
 .promo-block {
 	line-height: 1.75;
-	padding-bottom: 79px;
+	padding-bottom: 40px;
 	.post {
-		padding: 20px;
-		box-shadow: 0 0 35px rgba(#000, 0.1);
+		padding: 20px 20px 0;
+		border: 1px solid $brand-primary;
 		border-radius: 4px;
 		@include media('>=tablet') {
-			padding: 50px 70px 35px 80px;
+			padding: 50px 70px 0 80px;
 		}
 		p {
 			margin-bottom: 5px;
@@ -96,7 +100,9 @@ $media-expressions: (
 		}
 	}
 	.post__btn {
+		text-align: center;
 		padding-top: 30px;
+		margin-bottom: -15px;
 	}
 	[aria-expanded="false"] {
 		.opened {

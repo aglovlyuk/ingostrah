@@ -128,6 +128,7 @@
 	padding-bottom: 5px;
 	font-weight: 400;
 	color: #f38230;
+	background: #fff;
 	border: 1px solid #f38230;
 }
 
@@ -147,7 +148,6 @@
 
 .header {
 	padding: 0 0 30px;
-	background: #fff url(../images/bg-intro.png) repeat-x;
 }
 
 .header .logo {
@@ -450,14 +450,18 @@
 	padding: 0;
 }
 
+body {
+	background: #fff url(../images/bg-intro.png) repeat-x 50% 0;
+}
+
 .promo-block {
 	line-height: 1.75;
-	padding-bottom: 79px;
+	padding-bottom: 40px;
 }
 
 .promo-block .post {
-	padding: 20px;
-	box-shadow: 0 0 35px rgba(0, 0, 0, .1);
+	padding: 20px 20px 0;
+	border: 1px solid #f38230;
 	border-radius: 4px;
 }
 
@@ -522,7 +526,9 @@
 }
 
 .promo-block .post__btn {
+	text-align: center;
 	padding-top: 30px;
+	margin-bottom: -15px;
 }
 
 .promo-block [aria-expanded="false"] .opened {
@@ -610,7 +616,7 @@
 	}
 
 	.promo-block .post {
-		padding: 50px 70px 35px 80px;
+		padding: 50px 70px 0 80px;
 	}
 }
 
