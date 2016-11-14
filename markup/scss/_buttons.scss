@@ -7,7 +7,12 @@
 	border-radius: 4px;
 	text-decoration: none;
 	border: none;
+	outline: none !important;
 	@include anim;
+	&:active:focus,
+	&:active:hover,
+	&:focus,
+	&:active { color: #fff; }
 	&:hover {
 		box-shadow: 0 5px 10px rgba($brand-primary, .75);
 		color: #fff;

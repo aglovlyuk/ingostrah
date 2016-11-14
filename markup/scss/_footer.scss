@@ -2,14 +2,11 @@
 
 .footer {
 	background: $footer-bg;
-	color: #fff;
+	color: $footer-color;
 	padding: 29px 0 12px;
-	a {
-		color: #fff;
-	}
-	h3{
-		margin: 0 0 10px;
-	}
+	a { color: $footer-color; }
+	[class*="icon"] { color: #fff; }
+	h3{ margin: 0 0 10px; }
 }
 .footer__top {
 	margin-bottom: 19px;
@@ -63,9 +60,7 @@
 		min-height: 100%;
 		display: flex;
 		align-items: center;
-		&:hover {
-			transform: scale(1.2);
-		}
+		&:hover { transform: scale(1.2); }
 	}
 	.icon-vk {
 		font-size: 24px;

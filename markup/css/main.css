@@ -107,8 +107,16 @@
 	border-radius: 4px;
 	text-decoration: none;
 	border: none;
+	outline: none !important;
 	-webkit-transition: all .2s ease-in-out 0s;
 	transition: all .2s ease-in-out 0s;
+}
+
+.btn:active:focus,
+.btn:active:hover,
+.btn:focus,
+.btn:active {
+	color: #fff;
 }
 
 .btn:hover {
@@ -181,12 +189,16 @@
 /* #footer */
 
 .footer {
-	background: #0c4da2;
-	color: #fff;
+	background: #004b93;
+	color: #d1d1d1;
 	padding: 29px 0 12px;
 }
 
 .footer a {
+	color: #d1d1d1;
+}
+
+.footer [class*="icon"] {
 	color: #fff;
 }
 
@@ -455,7 +467,6 @@ body {
 }
 
 .promo-block {
-	line-height: 1.75;
 	padding-bottom: 40px;
 }
 
@@ -466,7 +477,7 @@ body {
 }
 
 .promo-block .post p {
-	margin-bottom: 5px;
+	margin-bottom: 0;
 }
 
 .promo-block .title {
@@ -516,13 +527,15 @@ body {
 }
 
 .promo-block .list a {
+	-webkit-transition: border-color .2s ease-in-out 0s;
+	transition: border-color .2s ease-in-out 0s;
 	color: #004c94;
-	padding: 0 0 2px;
+	border-bottom: 1px solid #004c94;
+	text-decoration: none;
 }
 
 .promo-block .list a:hover {
-	text-decoration: none;
-	border-bottom: 1px solid #004c94;
+	border-color: transparent;
 }
 
 .promo-block .post__btn {

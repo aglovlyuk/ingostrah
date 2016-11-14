@@ -39,7 +39,6 @@ body {
 
 
 .promo-block {
-	line-height: 1.75;
 	padding-bottom: 40px;
 	.post {
 		padding: 20px 20px 0;
@@ -49,7 +48,7 @@ body {
 			padding: 50px 70px 0 80px;
 		}
 		p {
-			margin-bottom: 5px;
+			margin-bottom: 0;
 		}
 	}
 	.title {
@@ -91,11 +90,12 @@ body {
 			color: $brand-primary;
 		}
 		a {
+			@include anim($param: border-color);
 			color: $link-color;
-			padding: 0 0 2px;
+			border-bottom: 1px solid $link-color;
+			text-decoration: none;
 			&:hover {
-				text-decoration: none;
-				border-bottom: 1px solid $link-color;
+				border-color: transparent;
 			}
 		}
 	}
